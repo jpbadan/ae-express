@@ -1,0 +1,8 @@
+.vscode/
+node_modules/
+build/
+temp/
+.DS_Store
+
+tmp/*
+!tmp/.gitkeep
