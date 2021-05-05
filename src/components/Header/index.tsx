@@ -1,3 +1,4 @@
+import { Section } from "./Section";
 import { Container, Content } from "./styles";
 
 
@@ -6,10 +7,11 @@ export function Header(){
         <Container>
             <Content>
                 <h1>Aerospace Express</h1>
-                <button>Home</button>
-                <button>Past</button>
-                <button>Comments</button>
-                <button>Submit</button>
+                <Section name='Home'/>
+                <Section name='Past'/>
+                <Section name='Comments'/>
+                <Section name='Submit'/>
+
             </Content>
         </Container>
     )

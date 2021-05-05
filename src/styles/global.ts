@@ -7,6 +7,8 @@ export const GlobalStyle =  createGlobalStyle`
 
 
         --white-1: #E8EAED;
+        --white-2: #B8BABD;
+
         --orange-1: # #FB8B24;
         --green-1: #C7EF00;
 
@@ -34,7 +36,7 @@ export const GlobalStyle =  createGlobalStyle`
         -webkit-font-smoothing: antialiased; /* Optimizing for chrome engine browsers */   
    }
 
-   body, input, textarea, button {
+   body, input, textarea, button, a {
        font-family: 'Work sans', sans-serif;
        font-weight: 400;
        color: var(--white-1);
@@ -46,6 +48,15 @@ export const GlobalStyle =  createGlobalStyle`
 
    button{
        cursor: pointer;
+   }
+
+   a{
+        text-decoration: none;
+        transition: filter 0.1s;
+
+        &:hover{
+            filter: brightness(0.8);
+        }
    }
 
    [disabled]{
