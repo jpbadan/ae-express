@@ -1,26 +1,22 @@
-import { Container, Content, Headline, Description, Ranking } from './styles';
-import {GoChevronUp} from 'react-icons/go'
+import { Container, Content } from './styles';
+import { Description } from './Description';
+import { Ranking } from './Ranking';
+import { Headline } from './Headline';
+
 
 export function Item(){
     return(
         <Container>
-            <Ranking>
-                <GoChevronUp size={30} fill='#E8EAED' />
-            </Ranking>
+            <Ranking />
             <Content>
-                <Headline>
-                    <a href ='link'>
-                        <strong>Embraer delivers 22 jets fighters in first quarter of 2021</strong>
-                    </a>
-                    <a href='broken'>(www.FlightGlobal.com)</a>
-                </Headline>
-                <Description>
-                    <p>529 points by croes 4 hours ago | 284 comments</p>
-                </Description>
+                <Headline />
+                <Description />
             </Content>
-
-        
-     
         </Container>
     )
 }
+
+
+
+
+

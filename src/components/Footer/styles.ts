@@ -16,4 +16,11 @@ export const Content = styled.div`
 
     color: var(--white-2);
 
+    span{
+        padding: 0rem 0.33rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 `;
